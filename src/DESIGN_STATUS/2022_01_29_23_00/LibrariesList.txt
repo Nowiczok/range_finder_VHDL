@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+--
+-- Title      : List of local and global libraries visible in Library Manager
+-- Active-HDL : 11.1.262.7351
+-- Workspace  : project_PSC
+-- Design     : range_finder
+-- Author     : Micha³
+-- Company    : AGH
+-- Date       : 2022-01-29 23:00:33
+--
+-------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Library                     | Mode  | Vendor   | Version                                        | Path                                                                | Comment
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+aldec                       | RO    | ALDEC    | Aldec Active-HDL                               | C:/Aldec/Active-HDL-Student-Edition/vlib/aldec                      | VHDL PROCEDURES FOR CALLING ASDB, MATLAB, SIGNAL AGENT TASKS FROM THE VHDL CODE, RANDOM PACKAGE
+exemplar                    | RO    | Mentor   | Mentor Graphics Precision RTL Synthesis 2017.1 | C:/Aldec/Active-HDL-Student-Edition/vlib/exemplar                   | EXEMPLAR VHDL library
+uvm_1_1d                    | RO    | No Data  | No Data                                        | C:/Aldec/Active-HDL-Student-Edition/vlib/uvm-1.1d/lib               | UVM 1.1d Library
+vtl_dbg                     | RO    | No Data  | No Data                                        | C:/Aldec/Active-HDL-Student-Edition/vlib/vtl                        | No Data
+uvm_1_2                     | RO    | No Data  | No Data                                        | C:/Aldec/Active-HDL-Student-Edition/vlib/uvm-1.2/lib                | UVM 1.2 Library
+vl                          | RO    | No Data  | No Data                                        | C:/Aldec/Active-HDL-Student-Edition/vlib/vl                         | Standard Verilog library
+uvm_1800_2_2017             | RO    | No Data  | No Data                                        | C:/Aldec/Active-HDL-Student-Edition/vlib/uvm-1800.2-2017/lib        | UVM 1800.2-2017 Library
+uvvm_vvc_framework          | RO    | No Data  | Bitvis AS                                      | C:/Aldec/Active-HDL-Student-Edition/vlib/uvvm_vvc_framework         | UVVM 2018.12.03 VVC Framework Utility Library
+vital2000                   | RO    | No Data  | No Data                                        | C:/Aldec/Active-HDL-Student-Edition/vlib/ieee                       | Standard IEEE packages library
+vtl                         | RO    | No Data  | No Data                                        | C:/Aldec/Active-HDL-Student-Edition/vlib/vtl                        | No Data
+range_finder_timing         | RW    | No Data  | No Data                                        | C:/My_Designs/project_PSC/range_finder/range_finder_timing          | No Data
+assertions                  | RO    | No Data  | No Data                                        | C:/Aldec/Active-HDL-Student-Edition/vlib/assertions                 | No Data
+ieee                        | RO    | No Data  | No Data                                        | C:/Aldec/Active-HDL-Student-Edition/vlib/ieee                       | Standard IEEE packages library
+range_finder                | RW    | No Data  | No Data                                        | C:/My_Designs/project_PSC/range_finder/range_finder                 | No Data
+std                         | RO    | No Data  | No Data                                        | C:/Aldec/Active-HDL-Student-Edition/vlib/std                        | Standard VHDL library
+range_finder_post_synthesis | RW    | No Data  | No Data                                        | C:/My_Designs/project_PSC/range_finder/range_finder_post_synthesis  | No Data
+ieee_proposed               | RO    | No Data  | No Data                                        | C:/Aldec/Active-HDL-Student-Edition/vlib/ieee_proposed              | VHDL '93 compatible version of the proposed packages for the IEEE 1076-2008 standard
+osvvm                       | RO    | No Data  | SynthWorks                                     | C:/Aldec/Active-HDL-Student-Edition/vlib/osvvm                      | OSVVM 2018.04 Library
+uvvm_util                   | RO    | No Data  | Bitvis AS                                      | C:/Aldec/Active-HDL-Student-Edition/vlib/uvvm_util                  | UVVM 2018.12.03 VHDL Library
+synopsys                    | RO    | No Data  | No Data                                        | C:/Aldec/Active-HDL-Student-Edition/vlib/synopsys                   | Library containing packages with useful functions for std_logic types objects
+uvm                         | RO    | No Data  | No Data                                        | C:/Aldec/Active-HDL-Student-Edition/vlib/uvm-1.1d/lib               | UVM 1.1d Library
+synplify                    | RO    | Synopsys | Synopsys FPGA Products N-2017.09               | C:/Aldec/Active-HDL-Student-Edition/vlib/synplify                   | SYNPLIFY VHDL library
+xpm                         | RO    | Xilinx   | Xilinx Vivado 2019.1.3                         | C:/Aldec/Active-HDL-Student-Edition/vlib/xilinx_vivado/xpm          | XPM SystemVerilog library
+xilinx_vip                  | RO    | Xilinx   | Xilinx Vivado 2019.1.3                         | C:/Aldec/Active-HDL-Student-Edition/vlib/xilinx_vivado/xilinx_vip   | XILINX_VIP library
+simprims_ver                | RO    | Xilinx   | Xilinx Vivado 2019.1.3                         | C:/Aldec/Active-HDL-Student-Edition/vlib/xilinx_vivado/simprims_ver | SIMPRIM Verilog library
+secureip                    | RO    | Xilinx   | Xilinx Vivado 2019.1.3                         | C:/Aldec/Active-HDL-Student-Edition/vlib/xilinx_vivado/secureip     | SECUREIP library
+unimacro_ver                | RO    | Xilinx   | Xilinx Vivado 2019.1.3                         | C:/Aldec/Active-HDL-Student-Edition/vlib/xilinx_vivado/unimacro_ver | UNIMACRO Verilog library
+unifast                     | RO    | Xilinx   | Xilinx Vivado 2019.1.3                         | C:/Aldec/Active-HDL-Student-Edition/vlib/xilinx_vivado/unifast      | UNIFAST VHDL library
+unisims_ver                 | RO    | Xilinx   | Xilinx Vivado 2019.1.3                         | C:/Aldec/Active-HDL-Student-Edition/vlib/xilinx_vivado/unisims_ver  | UNISIM Verilog library
+unifast_ver                 | RO    | Xilinx   | Xilinx Vivado 2019.1.3                         | C:/Aldec/Active-HDL-Student-Edition/vlib/xilinx_vivado/unifast_ver  | UNIFAST Verilog library
+unimacro                    | RO    | Xilinx   | Xilinx Vivado 2019.1.3                         | C:/Aldec/Active-HDL-Student-Edition/vlib/xilinx_vivado/unimacro     | UNIMACRO VHDL library
+unisim                      | RO    | Xilinx   | Xilinx Vivado 2019.1.3                         | C:/Aldec/Active-HDL-Student-Edition/vlib/xilinx_vivado/unisim       | UNISIM VHDL library
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,80 @@
+-------------------------------------------------------------------------------
+--
+-- Title      : Design Flow Manager settings and simulation libraries
+-- Active-HDL : 11.1.262.7351
+-- Workspace  : project_PSC
+-- Design     : range_finder
+-- Author     : Micha³
+-- Company    : AGH
+-- Date       : 2022-01-29 23:00:33
+--
+-------------------------------------------------------------------------------
+1. Design Flow Manager Settings
+------------------------------------------------------------------------------------------------
+Language           | VHDL
+Flow Type          | HDL
+C Synthesis        | <none>  
+HDL Synthesis      | Xilinx ISE/WebPack 14.6/14.7 XST VHDL/Verilog D:\ISE\14.7\ISE_DS\ISE\bin\nt
+Physical Synthesis | <none>  
+Implementation     | Xilinx ISE/WebPack 14.6/14.7 D:\ISE\14.7\ISE_DS\ISE\bin\nt
+Family Name        | Xilinx14x SPARTAN3A
+------------------------------------------------------------------------------------------------
+
+2. Working Library: range_finder
+Active-HDL 11.1.262.7351 2022-01-29 23:00:17
+
+Elaboration top modules:
+VHDL Configuration            testbench_for_top
+
+
+-------------------------------------------------------------------------------------------------------------
+Entity              | Architecture     | Library      | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------------------
+Top_tb              | TB_ARCHITECTURE  | range_finder |      | 11.1.262.7351 (Windows) | -O3
+top                 | top              | range_finder |      | 11.1.262.7351 (Windows) | -O3
+display_unit        | display_unit     | range_finder |      | 11.1.262.7351 (Windows) | -O3
+measurement_unit    | measurement_unit | range_finder |      | 11.1.262.7351 (Windows) | -O3
+trig_unit           | trig_unit        | range_finder |      | 11.1.262.7351 (Windows) | -O3
+bin_bcd_multi_digit | Behavioral       | range_finder |      | 11.1.262.7351 (Windows) | -O3
+triple_seven_seg    | Behavioral       | range_finder |      | 11.1.262.7351 (Windows) | -O3
+Prescaler           | Prescaler        | range_finder |      | 11.1.262.7351 (Windows) | -O3
+bin_to_bcd          | Behavioral       | range_finder |      | 11.1.262.7351 (Windows) | -O3
+seven_seg           | Behavioral       | range_finder |      | 11.1.262.7351 (Windows) | -O3
+pulse_meter         | pulse_meter      | range_finder |      | 11.1.262.7351 (Windows) | -O3
+rising_detector     | rising_detector  | range_finder |      | 11.1.262.7351 (Windows) | -O3
+falling_detector    | falling_detector | range_finder |      | 11.1.262.7351 (Windows) | -O3
+-------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------
+VHDL Configuration                     | Library      | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------------------
+testbench_for_top                      | range_finder |      |                         | <unavailable>
+-------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------
+VHDL Package                           | Library      | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------------------
+standard                               | std          |      |                         | <unavailable>
+TEXTIO                                 | std          |      |                         | <unavailable>
+std_logic_1164                         | ieee         |      |                         | <unavailable>
+std_logic_arith                        | ieee         |      |                         | <unavailable>
+STD_LOGIC_UNSIGNED                     | ieee         |      |                         | <unavailable>
+STD_LOGIC_SIGNED                       | ieee         |      |                         | <unavailable>
+NUMERIC_STD                            | ieee         |      |                         | <unavailable>
+-------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------
+Library                                | Comment
+-------------------------------------------------------------------------------------------------------------
+ieee                                   | Standard IEEE packages library
+range_finder                           | None
+std                                    | Standard VHDL library
+-------------------------------------------------------------------------------------------------------------
+
+3. Working Library: range_finder_post_synthesis
+No Simulation Report.
+
+4. Working Library: range_finder_timing
+No Simulation Report.
+
+

@@ -1,0 +1,439 @@
+InputFile = C:/My_Designs/project_PSC/range_finder/implement/xie0.ini
+Executing "D:\ISE\14.7\ISE_DS\ISE\bin\nt\ngdbuild.exe" -p 3S50ATQ144-4   -sd "C:\My_Designs\project_PSC\range_finder\synthesis" -sd "C:\My_Designs\project_PSC\range_finder\compile" -sd "C:\My_Designs\project_PSC\range_finder\src" -uc "top.ucf" "top.ngc" "top.ngd"
+Release 14.7 - ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: D:\ISE\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -p
+3S50ATQ144-4 -sd C:\My_Designs\project_PSC\range_finder\synthesis -sd
+C:\My_Designs\project_PSC\range_finder\compile -sd
+C:\My_Designs\project_PSC\range_finder\src -uc top.ucf top.ngc top.ngd
+
+Reading NGO file
+"C:/My_Designs/project_PSC/range_finder/implement/ver1/rev1/top.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "top.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem - The Period constraint <PERIOD = 12MHz;> [top.ucf(2)], is
+   specified using the Net Period method which is not recommended. Please use
+   the Timespec PERIOD method.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "top.ngd" ...
+Total REAL time to NGDBUILD completion:  1 sec
+Total CPU time to NGDBUILD completion:   1 sec
+
+Writing NGDBUILD log file "top.bld"...
+
+NGDBUILD done.
+Executing "D:\ISE\14.7\ISE_DS\ISE\bin\nt\map.exe" -p 3S50ATQ144-4 -o "map.ncd"  -pr off  -cm area  -ir off  -c 100 "top.ngd" "top.pcf"
+Release 14.7 - Map P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Using target part "3s50atq144-4".
+Mapping design into LUTs...
+Writing file map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+Writing design file "map.ncd"...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:           156 out of   1,408   11%
+  Number of 4 input LUTs:               188 out of   1,408   13%
+Logic Distribution:
+  Number of occupied Slices:            159 out of     704   22%
+    Number of Slices containing only related logic:     159 out of     159 100%
+    Number of Slices containing unrelated logic:          0 out of     159   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         306 out of   1,408   21%
+    Number used as logic:               188
+    Number used as a route-thru:        118
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 13 out of     108   12%
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Average Fanout of Non-Clock Nets:                2.66
+
+Peak Memory Usage:  227 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "map.mrp" for details.
+Executing "D:\ISE\14.7\ISE_DS\ISE\bin\nt\trce.exe" -v 3  -s 4  -n 3  -fastpaths "map.ncd" "top.pcf" -o "top_postmap.twr"
+Release 14.7 - Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+Loading device for application Rf_Device from file '3s50a.nph' in environment
+D:\ISE\14.7\ISE_DS\ISE\.
+   "top" is an NCD, version 3.2, device xc3s50a, package tq144, speed -4
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ISE\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -v 3 -s 4 -n 3 -fastpaths
+map.ncd top.pcf -o top_postmap.twr
+
+
+Design file:              map.ncd
+Physical constraint file: top.pcf
+Device,speed:             xc3s50a,-4 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay
+   information.  For accurate numbers, please refer to the post Place and Route
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on a
+   50 Ohm transmission line loading model.  For the details of this model, and
+   for more information on accounting for different loading conditions, please
+   see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
+   'Phase Error' calculations, these terms will be zero in the Clock Uncertainty
+   calculation.  Please make appropriate modification to SYSTEM_JITTER to
+   account for the unsupported Discrete Jitter and Phase Error.
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0 (Setup/Max: 0, Hold: 0)
+
+Constraints cover 6409 paths, 0 nets, and 819 connections
+
+Design statistics:
+   Minimum period:   6.881ns (Maximum frequency: 145.328MHz)
+
+
+Analysis completed Wed Jan 12 10:47:01 2022
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Number of info messages: 6
+Total time: 1 secs 
+Executing "D:\ISE\14.7\ISE_DS\ISE\bin\nt\par.exe" -w  -ol high  -t  1 map.ncd "top.ncd" "top.pcf"
+Release 14.7 - par P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+
+Constraints file: top.pcf.
+Loading device for application Rf_Device from file '3s50a.nph' in environment D:\ISE\14.7\ISE_DS\ISE\.
+   "top" is an NCD, version 3.2, device xc3s50a, package tq144, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.42 2013-10-13".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          13 out of 108    12%
+
+   Number of External Input IOBs                  2
+
+      Number of External Input IBUFs              2
+        Number of LOCed External Input IBUFs      2 out of 2     100%
+
+
+   Number of External Output IOBs                11
+
+      Number of External Output IOBs             11
+        Number of LOCed External Output IOBs     11 out of 11    100%
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BUFGMUXs                        1 out of 24      4%
+   Number of Slices                        159 out of 704    22%
+      Number of SLICEMs                      0 out of 352     0%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 0 secs 
+Finished initial Timing Analysis.  REAL time: 0 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 1 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:45888a80) REAL time: 1 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:45888a80) REAL time: 1 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:45888a80) REAL time: 1 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:49c13202) REAL time: 1 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:49c13202) REAL time: 1 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:49c13202) REAL time: 1 secs 
+
+Phase 7.8  Global Placement
+........................
+...
+...
+Phase 7.8  Global Placement (Checksum:685297e9) REAL time: 1 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:685297e9) REAL time: 1 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:72f54f8d) REAL time: 1 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:72f54f8d) REAL time: 1 secs 
+
+Total REAL time to Placer completion: 1 secs 
+Total CPU  time to Placer completion: 1 secs 
+Writing design to file top.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 909 unrouted;      REAL time: 2 secs 
+
+Phase  2  : 805 unrouted;      REAL time: 2 secs 
+
+Phase  3  : 108 unrouted;      REAL time: 2 secs 
+
+Phase  4  : 108 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
+
+Updating file: top.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
+
+Total REAL time to Router completion: 2 secs 
+Total CPU time to Router completion: 2 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           CLK_BUFGP | BUFGMUX_X2Y10| No   |   93 |  0.133     |  0.596      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  NET "CLK_BUFGP/IBUFG" PERIOD = 83.3333333 | SETUP       |    74.971ns|     8.362ns|       0|           0
+   ns HIGH 50%                              | HOLD        |     1.087ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 2 secs 
+Total CPU time to PAR completion: 2 secs 
+
+Peak Memory Usage:  228 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 0
+
+Writing design to file top.ncd
+
+
+
+PAR done!
+Executing "D:\ISE\14.7\ISE_DS\ISE\bin\nt\trce.exe" -v 3  -s  4  -n 3  -fastpaths "top.ncd" "top.pcf" -o "top_postpar.twr"
+Release 14.7 - Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+Loading device for application Rf_Device from file '3s50a.nph' in environment
+D:\ISE\14.7\ISE_DS\ISE\.
+   "top" is an NCD, version 3.2, device xc3s50a, package tq144, speed -4
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ISE\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -v 3 -s 4 -n 3 -fastpaths
+top.ncd top.pcf -o top_postpar.twr
+
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,speed:             xc3s50a,-4 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on a
+   50 Ohm transmission line loading model.  For the details of this model, and
+   for more information on accounting for different loading conditions, please
+   see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
+   'Phase Error' calculations, these terms will be zero in the Clock Uncertainty
+   calculation.  Please make appropriate modification to SYSTEM_JITTER to
+   account for the unsupported Discrete Jitter and Phase Error.
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0 (Setup/Max: 0, Hold: 0)
+
+Constraints cover 6409 paths, 0 nets, and 819 connections
+
+Design statistics:
+   Minimum period:   8.362ns (Maximum frequency: 119.589MHz)
+
+
+Analysis completed Wed Jan 12 10:47:06 2022
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Number of info messages: 5
+Total time: 0 secs 
+Executing "D:\ISE\14.7\ISE_DS\ISE\bin\nt\netgen.exe" -w -sim -ofmt vhdl -pcf "top.pcf"  -tpw 0  -rpw 100  -s  4  -ar  Structure  -insert_pp_buffers true "top.ncd" "time_sim.vhd"
+Release 14.7 - netgen P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -w -sim -ofmt vhdl -pcf top.pcf -tpw 0 -rpw 100 -s 4 -ar
+Structure -insert_pp_buffers true top.ncd time_sim.vhd  
+
+Read and Annotate design 'top.ncd' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist 'time_sim.vhd' ...
+Writing VHDL SDF file 'time_sim.sdf' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx SIMPRIM
+   simulation primitives and has to be used with SIMPRIM library for correct
+   compilation and simulation. 
+INFO:NetListWriters - Xilinx recommends running separate simulations to check
+   for setup by specifying the MAX field in the SDF file and for hold by
+   specifying the MIN field in the SDF file. Please refer to Simulator
+   documentation for more details on specifying MIN and MAX field in the SDF.
+INFO:NetListWriters:665 - For more information on how to pass the SDF switches
+   to the simulator, see your Simulator tool documentation.
+Number of warnings: 0
+Number of info messages: 3
+Total memory usage is 189068 kilobytes
+
+Created netgen log file 'time_sim.nlf'.
+Implementation ver1->rev1: 0 error(s), 0 warning(s)
+Implementation completed successfully.
+
+

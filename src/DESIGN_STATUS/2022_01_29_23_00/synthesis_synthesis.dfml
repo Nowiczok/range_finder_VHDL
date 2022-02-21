@@ -1,0 +1,660 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.29 secs
+ 
+--> Parameter xsthdpdir set to C:\My_Designs\project_PSC\range_finder\synthesis\xst
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.29 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s50atq144-4
+
+---- Source Options
+Top Module Name                    : top
+Generics, Parameters               : {  }
+Verilog Macros                     : {  }
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Resource Sharing                   : YES
+FSM Style                          : LUT
+RAM Extraction                     : YES
+RAM Style                          : Auto
+ROM Extraction                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Multiplier Style                   : Auto
+Asynchronous To Synchronous        : NO
+Automatic Register Balancing       : No
+Safe Implementation                : NO
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Pack IO Registers into IOBs        : Auto
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Write Timing Constraints           : NO
+Verilog 2001                       : YES
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Cross Clock Analysis               : NO
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Read Cores                         : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/My_Designs/project_PSC/range_finder/src/seven_seg.vhd" in Library range_finder.
+Architecture behavioral of Entity seven_seg is up to date.
+Compiling vhdl file "C:/My_Designs/project_PSC/range_finder/src/bin_to_bcd.vhd" in Library range_finder.
+Architecture behavioral of Entity bin_to_bcd is up to date.
+Compiling vhdl file "C:/My_Designs/project_PSC/range_finder/src/pulse_meter.vhd" in Library range_finder.
+Architecture pulse_meter of Entity pulse_meter is up to date.
+Compiling vhdl file "C:/My_Designs/project_PSC/range_finder/src/rising_detector.vhd" in Library range_finder.
+Architecture rising_detector of Entity rising_detector is up to date.
+Compiling vhdl file "C:/My_Designs/project_PSC/range_finder/src/falling_detector.vhd" in Library range_finder.
+Architecture falling_detector of Entity falling_detector is up to date.
+Compiling vhdl file "C:/My_Designs/project_PSC/range_finder/src/Prescaler_mk2.vhd" in Library range_finder.
+Architecture prescaler of Entity prescaler is up to date.
+Compiling vhdl file "C:/My_Designs/project_PSC/range_finder/src/bin_bcd_multi_digit.vhd" in Library range_finder.
+Architecture behavioral of Entity bin_bcd_multi_digit is up to date.
+Compiling vhdl file "C:/My_Designs/project_PSC/range_finder/src/triple_seven_seg.vhd" in Library range_finder.
+Architecture behavioral of Entity triple_seven_seg is up to date.
+Compiling vhdl file "C:/My_Designs/project_PSC/range_finder/compile/display_unit.vhd" in Library range_finder.
+Entity <display_unit> compiled.
+Entity <display_unit> (Architecture <display_unit>) compiled.
+Compiling vhdl file "C:/My_Designs/project_PSC/range_finder/compile/measurement_unit.vhd" in Library range_finder.
+Architecture measurement_unit of Entity measurement_unit is up to date.
+Compiling vhdl file "C:/My_Designs/project_PSC/range_finder/src/trig_unit.vhd" in Library range_finder.
+Architecture trig_unit of Entity trig_unit is up to date.
+Compiling vhdl file "C:/My_Designs/project_PSC/range_finder/compile/Top.vhd" in Library range_finder.
+Architecture top of Entity top is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top> in library <range_finder> (architecture <top>).
+
+Analyzing hierarchy for entity <display_unit> in library <range_finder> (architecture <display_unit>).
+
+Analyzing hierarchy for entity <measurement_unit> in library <range_finder> (architecture <measurement_unit>).
+
+Analyzing hierarchy for entity <trig_unit> in library <range_finder> (architecture <trig_unit>) with generics.
+	period = 6000000
+	pulse = 119
+
+Analyzing hierarchy for entity <bin_bcd_multi_digit> in library <range_finder> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <triple_seven_seg> in library <range_finder> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Prescaler> in library <range_finder> (architecture <prescaler>) with generics.
+	div = 1000
+
+Analyzing hierarchy for entity <pulse_meter> in library <range_finder> (architecture <pulse_meter>).
+
+Analyzing hierarchy for entity <rising_detector> in library <range_finder> (architecture <rising_detector>).
+
+Analyzing hierarchy for entity <falling_detector> in library <range_finder> (architecture <falling_detector>).
+
+Analyzing hierarchy for entity <Prescaler> in library <range_finder> (architecture <prescaler>) with generics.
+	div = 708
+
+Analyzing hierarchy for entity <bin_to_bcd> in library <range_finder> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <seven_seg> in library <range_finder> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top> in library <range_finder> (Architecture <top>).
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <display_unit> in library <range_finder> (Architecture <display_unit>).
+Entity <display_unit> analyzed. Unit <display_unit> generated.
+
+Analyzing Entity <bin_bcd_multi_digit> in library <range_finder> (Architecture <behavioral>).
+Entity <bin_bcd_multi_digit> analyzed. Unit <bin_bcd_multi_digit> generated.
+
+Analyzing Entity <bin_to_bcd> in library <range_finder> (Architecture <behavioral>).
+Entity <bin_to_bcd> analyzed. Unit <bin_to_bcd> generated.
+
+Analyzing Entity <triple_seven_seg> in library <range_finder> (Architecture <behavioral>).
+Entity <triple_seven_seg> analyzed. Unit <triple_seven_seg> generated.
+
+Analyzing Entity <seven_seg> in library <range_finder> (Architecture <behavioral>).
+Entity <seven_seg> analyzed. Unit <seven_seg> generated.
+
+Analyzing generic Entity <Prescaler.1> in library <range_finder> (Architecture <prescaler>).
+	div = 1000
+Entity <Prescaler.1> analyzed. Unit <Prescaler.1> generated.
+
+Analyzing Entity <measurement_unit> in library <range_finder> (Architecture <measurement_unit>).
+Entity <measurement_unit> analyzed. Unit <measurement_unit> generated.
+
+Analyzing Entity <pulse_meter> in library <range_finder> (Architecture <pulse_meter>).
+Entity <pulse_meter> analyzed. Unit <pulse_meter> generated.
+
+Analyzing Entity <rising_detector> in library <range_finder> (Architecture <rising_detector>).
+Entity <rising_detector> analyzed. Unit <rising_detector> generated.
+
+Analyzing Entity <falling_detector> in library <range_finder> (Architecture <falling_detector>).
+Entity <falling_detector> analyzed. Unit <falling_detector> generated.
+
+Analyzing generic Entity <Prescaler.2> in library <range_finder> (Architecture <prescaler>).
+	div = 708
+Entity <Prescaler.2> analyzed. Unit <Prescaler.2> generated.
+
+Analyzing generic Entity <trig_unit> in library <range_finder> (Architecture <trig_unit>).
+	period = 6000000
+	pulse = 119
+Entity <trig_unit> analyzed. Unit <trig_unit> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <trig_unit>.
+    Related source file is "C:/My_Designs/project_PSC/range_finder/src/trig_unit.vhd".
+    Found 1-bit register for signal <output>.
+    Found 32-bit up counter for signal <cnt>.
+    Found 33-bit comparator less for signal <cnt$cmp_lt0000> created at line 48.
+    Found 33-bit comparator less for signal <output$cmp_lt0000> created at line 61.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <trig_unit> synthesized.
+
+
+Synthesizing Unit <Prescaler_1>.
+    Related source file is "C:/My_Designs/project_PSC/range_finder/src/Prescaler_mk2.vhd".
+    Found 32-bit up counter for signal <DIVIDER>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Prescaler_1> synthesized.
+
+
+Synthesizing Unit <bin_to_bcd>.
+    Related source file is "C:/My_Designs/project_PSC/range_finder/src/bin_to_bcd.vhd".
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 30                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | ce                        (positive)           |
+    | Power Up State     | zero                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <bin_to_bcd> synthesized.
+
+
+Synthesizing Unit <seven_seg>.
+    Related source file is "C:/My_Designs/project_PSC/range_finder/src/seven_seg.vhd".
+    Found 16x7-bit ROM for signal <sev_seg>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <seven_seg> synthesized.
+
+
+Synthesizing Unit <pulse_meter>.
+    Related source file is "C:/My_Designs/project_PSC/range_finder/src/pulse_meter.vhd".
+    Found 10-bit register for signal <COUNT>.
+    Found 10-bit up counter for signal <cnt>.
+    Found 1-bit register for signal <cnvrt>.
+    Found 1-bit register for signal <convert_flag>.
+    Found 10-bit adder for signal <COUNT$add0000> created at line 66.
+    Found 1-bit register for signal <increment_flag>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  13 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <pulse_meter> synthesized.
+
+
+Synthesizing Unit <rising_detector>.
+    Related source file is "C:/My_Designs/project_PSC/range_finder/src/rising_detector.vhd".
+    Found 3-bit register for signal <reg>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <rising_detector> synthesized.
+
+
+Synthesizing Unit <falling_detector>.
+    Related source file is "C:/My_Designs/project_PSC/range_finder/src/falling_detector.vhd".
+    Found 3-bit register for signal <reg>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <falling_detector> synthesized.
+
+
+Synthesizing Unit <Prescaler_2>.
+    Related source file is "C:/My_Designs/project_PSC/range_finder/src/Prescaler_mk2.vhd".
+    Found 32-bit up counter for signal <DIVIDER>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Prescaler_2> synthesized.
+
+
+Synthesizing Unit <measurement_unit>.
+    Related source file is "C:/My_Designs/project_PSC/range_finder/compile/measurement_unit.vhd".
+WARNING:Xst:653 - Signal <CLR> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <measurement_unit> synthesized.
+
+
+Synthesizing Unit <bin_bcd_multi_digit>.
+    Related source file is "C:/My_Designs/project_PSC/range_finder/src/bin_bcd_multi_digit.vhd".
+WARNING:Xst:646 - Signal <Din_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_1> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | ce                        (positive)           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <ce_int>.
+    Found 1-bit register for signal <clear>.
+    Found 4-bit register for signal <counter>.
+    Found 4-bit adder for signal <counter$addsub0000> created at line 93.
+    Found 1-bit register for signal <Din_0>.
+    Found 10-bit register for signal <input_buffer>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <bin_bcd_multi_digit> synthesized.
+
+
+Synthesizing Unit <triple_seven_seg>.
+    Related source file is "C:/My_Designs/project_PSC/range_finder/src/triple_seven_seg.vhd".
+    Found 2-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <triple_seven_seg> synthesized.
+
+
+Synthesizing Unit <display_unit>.
+    Related source file is "C:/My_Designs/project_PSC/range_finder/compile/display_unit.vhd".
+Unit <display_unit> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "C:/My_Designs/project_PSC/range_finder/compile/Top.vhd".
+WARNING:Xst:653 - Signal <CE> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+Unit <top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 10-bit adder                                          : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 5
+ 10-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 3
+# Registers                                            : 12
+ 1-bit register                                        : 7
+ 10-bit register                                       : 2
+ 3-bit register                                        : 2
+ 4-bit register                                        : 1
+# Comparators                                          : 2
+ 33-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <U1/U1/current_state/FSM> on signal <current_state[1:2]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ idle       | 00
+ prepare    | 01
+ conversion | 10
+------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <U1/U1/digit0/current_state/FSM> on signal <current_state[1:4]> with user encoding.
+Optimizing FSM <U1/U1/digit1/current_state/FSM> on signal <current_state[1:4]> with user encoding.
+Optimizing FSM <U1/U1/digit2/current_state/FSM> on signal <current_state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ zero  | 0000
+ one   | 0001
+ two   | 0010
+ three | 0011
+ four  | 0100
+ five  | 0101
+ six   | 0110
+ seven | 0111
+ eight | 1000
+ nine  | 1001
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 10-bit adder                                          : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 5
+ 10-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 3
+# Registers                                            : 37
+ Flip-Flops                                            : 37
+# Comparators                                          : 2
+ 33-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <U2/U3/reg_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <U2/U2/reg_0> 
+INFO:Xst:2261 - The FF/Latch <U2/U3/reg_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <U2/U2/reg_1> 
+INFO:Xst:2261 - The FF/Latch <U2/U3/reg_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <U2/U2/reg_2> 
+
+Optimizing unit <top> ...
+
+Optimizing unit <pulse_meter> ...
+
+Optimizing unit <bin_bcd_multi_digit> ...
+
+Optimizing unit <triple_seven_seg> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 24.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 156
+ Flip-Flops                                            : 156
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 602
+#      GND                         : 1
+#      INV                         : 17
+#      LUT1                        : 114
+#      LUT2                        : 82
+#      LUT3                        : 37
+#      LUT4                        : 54
+#      MUXCY                       : 154
+#      MUXF5                       : 26
+#      VCC                         : 1
+#      XORCY                       : 116
+# FlipFlops/Latches                : 156
+#      FDCE                        : 64
+#      FDE                         : 48
+#      FDRE                        : 44
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 1
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-4 
+
+ Number of Slices:                      160  out of    704    22%  
+ Number of Slice Flip Flops:            156  out of   1408    11%  
+ Number of 4 input LUTs:                304  out of   1408    21%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    108    12%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 156   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+N0(XST_GND:G)                      | NONE(U2/U4/DIVIDER_0)  | 32    |
+U2/U1/cnvrt(U2/U1/cnvrt:Q)         | NONE(U1/U3/DIVIDER_0)  | 32    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.659ns (Maximum Frequency: 150.171MHz)
+   Minimum input arrival time before clock: 1.521ns
+   Maximum output required time after clock: 8.917ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 6.659ns (frequency: 150.171MHz)
+  Total number of paths / destination ports: 6409 / 240
+-------------------------------------------------------------------------
+Delay:               6.659ns (Levels of Logic = 10)
+  Source:            U2/U4/DIVIDER_8 (FF)
+  Destination:       U2/U1/cnt_9 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: U2/U4/DIVIDER_8 to U2/U1/cnt_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.591   0.590  U2/U4/DIVIDER_8 (U2/U4/DIVIDER_8)
+     LUT4:I0->O            1   0.648   0.000  U2/U4/DIVIDER_cmp_eq0000_wg_lut<0> (U2/U4/DIVIDER_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  U2/U4/DIVIDER_cmp_eq0000_wg_cy<0> (U2/U4/DIVIDER_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  U2/U4/DIVIDER_cmp_eq0000_wg_cy<1> (U2/U4/DIVIDER_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  U2/U4/DIVIDER_cmp_eq0000_wg_cy<2> (U2/U4/DIVIDER_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  U2/U4/DIVIDER_cmp_eq0000_wg_cy<3> (U2/U4/DIVIDER_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  U2/U4/DIVIDER_cmp_eq0000_wg_cy<4> (U2/U4/DIVIDER_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  U2/U4/DIVIDER_cmp_eq0000_wg_cy<5> (U2/U4/DIVIDER_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  U2/U4/DIVIDER_cmp_eq0000_wg_cy<6> (U2/U4/DIVIDER_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          41   0.141   1.268  U2/U4/DIVIDER_cmp_eq0000_wg_cy<7> (U2/CEO)
+     LUT4:I3->O           10   0.648   0.882  U2/U1/cnt_and00001 (U2/U1/cnt_and0000)
+     FDRE:R                    0.869          U2/U1/cnt_0
+    ----------------------------------------
+    Total                      6.659ns (3.919ns logic, 2.740ns route)
+                                       (58.9% logic, 41.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.521ns (Levels of Logic = 1)
+  Source:            SIG (PAD)
+  Destination:       U2/U3/reg_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: SIG to U2/U3/reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.849   0.420  SIG_IBUF (SIG_IBUF)
+     FDE:D                     0.252          U2/U3/reg_0
+    ----------------------------------------
+    Total                      1.521ns (1.101ns logic, 0.420ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 146 / 11
+-------------------------------------------------------------------------
+Offset:              8.917ns (Levels of Logic = 4)
+  Source:            U1/U2/counter_0 (FF)
+  Destination:       output<6> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: U1/U2/counter_0 to output<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             9   0.591   0.963  U1/U2/counter_0 (U1/U2/counter_0)
+     LUT3:I0->O            1   0.648   0.000  U1/U2/seven_seg_in<3>1 (U1/U2/seven_seg_in<3>1)
+     MUXF5:I0->O           7   0.276   0.851  U1/U2/seven_seg_in<3>_f5 (U1/U2/seven_seg_in<3>)
+     LUT4:I0->O            1   0.648   0.420  U1/U2/converter/Mrom_sev_seg41 (output_4_OBUF)
+     OBUF:I->O                 4.520          output_4_OBUF (output<4>)
+    ----------------------------------------
+    Total                      8.917ns (6.683ns logic, 2.234ns route)
+                                       (74.9% logic, 25.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.12 secs
+ 
+--> 
+
+Total memory usage is 236688 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM library for correct
+   compilation and simulation. 

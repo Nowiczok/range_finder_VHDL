@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+--
+-- Title      : List of design files displayed in Active-HDL Design Browser
+-- Active-HDL : 11.1.262.7351
+-- Workspace  : project_PSC
+-- Design     : range_finder
+-- Author     : Micha³
+-- Company    : AGH
+-- Date       : 2022-01-29 23:00:33
+--
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+File                               | Comp. | File Status | Design Folder  | File Path
+                                   | Order |             |                |
+----------------------------------------------------------------------------------------------------------------------------------------------------
+bin_to_bcd.vhd                     |     1 | Compiled    |                | C:\My_Designs\project_PSC\range_finder\src\bin_to_bcd.vhd
+seven_seg.vhd                      |     2 | Compiled    |                | C:\My_Designs\project_PSC\range_finder\src\seven_seg.vhd
+triple_seven_seg.vhd               |     3 | Compiled    |                | C:\My_Designs\project_PSC\range_finder\src\triple_seven_seg.vhd
+binary_to_dec_converter_constr.ucf |       | Modified    |                | C:\My_Designs\project_PSC\range_finder\src\binary_to_dec_converter_constr.ucf
+bin_bcd_multi_digit.vhd            |     4 | Compiled    |                | C:\My_Designs\project_PSC\range_finder\src\bin_bcd_multi_digit.vhd
+Prescaler_mk2.vhd                  |     5 | Compiled    |                | C:\My_Designs\project_PSC\range_finder\src\Prescaler_mk2.vhd
+pulse_meter.vhd                    |     6 | Compiled    |                | C:\My_Designs\project_PSC\range_finder\src\pulse_meter.vhd
+rising_detector.vhd                |     7 | Compiled    |                | C:\My_Designs\project_PSC\range_finder\src\rising_detector.vhd
+falling_detector.vhd               |     8 | Compiled    |                | C:\My_Designs\project_PSC\range_finder\src\falling_detector.vhd
+measurement_unit.bde               |     9 | Modified    |                | C:\My_Designs\project_PSC\range_finder\src\measurement_unit.bde
+trig_unit.vhd                      |    10 | Compiled    |                | C:\My_Designs\project_PSC\range_finder\src\trig_unit.vhd
+top.bde                            |    11 | Compiled    |                | C:\My_Designs\project_PSC\range_finder\src\top.bde
+display_unit.bde                   |    12 | Compiled    |                | C:\My_Designs\project_PSC\range_finder\src\display_unit.bde
+top_tb_conf.vhd                    |    13 | Compiled    |                | C:\My_Designs\project_PSC\range_finder\src\top_tb_conf.vhd
+script_synth_and_impl.tcl          |       | Modified    |                | C:\My_Designs\project_PSC\range_finder\src\script_synth_and_impl.tcl
+trig_unit_tb.do                    |       | Modified    | testbenches    | C:\My_Designs\project_PSC\range_finder\src\testbenches\trig_unit_tb.do
+trig_unit_tb.vhd                   |    14 | Compiled    | testbenches    | C:\My_Designs\project_PSC\range_finder\src\testbenches\trig_unit_tb.vhd
+measurement_unit_tb.do             |       | Modified    | testbenches    | C:\My_Designs\project_PSC\range_finder\src\testbenches\measurement_unit_tb.do
+measurement_unit_tb.vhd            |    15 | Compiled    | testbenches    | C:\My_Designs\project_PSC\range_finder\src\testbenches\measurement_unit_tb.vhd
+pulse_meter_tb.do                  |       | Modified    | testbenches    | C:\My_Designs\project_PSC\range_finder\src\testbenches\pulse_meter_tb.do
+pulse_meter_tb.vhd                 |    16 | Compiled    | testbenches    | C:\My_Designs\project_PSC\range_finder\src\testbenches\pulse_meter_tb.vhd
+top_tb.do                          |       | Modified    | testbenches    | C:\My_Designs\project_PSC\range_finder\src\testbenches\top_tb.do
+bin_bcd_tb.do                      |       | Modified    | testbenches    | C:\My_Designs\project_PSC\range_finder\src\testbenches\bin_bcd_tb.do
+top_tb.vhd                         |    17 | Compiled    | testbenches    | C:\My_Designs\project_PSC\range_finder\src\testbenches\top_tb.vhd
+bin_bcd_tb.vhd                     |    18 | Compiled    | testbenches    | C:\My_Designs\project_PSC\range_finder\src\testbenches\bin_bcd_tb.vhd
+top.vhd                            |    19 | Modified    | post-synthesis | C:\My_Designs\project_PSC\range_finder\synthesis\top.vhd
+TIME_SIM.VHD                       |    20 | Modified    | timing         | C:\My_Designs\project_PSC\range_finder\IMPLEMENT\TIME_SIM.VHD
+TIME_SIM.SDF                       |       | Modified    | timing         | C:\My_Designs\project_PSC\range_finder\IMPLEMENT\TIME_SIM.SDF
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
